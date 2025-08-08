@@ -19,7 +19,7 @@ export default function Navbar() {
 
     return (
         <section className={styles.contenedorCabecera}>
-            <Image src="/images/Atardecer familia.jpg"
+            <Image src="/images/Atardecerfamilia.jpg"
                 alt="Fondo atardecer"
                 fill
                 priority
