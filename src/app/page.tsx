@@ -1,10 +1,10 @@
 'use client'
-import { sesiones } from '@/data/sesiones'
 import styles from '@/styles/hom.module.css'
+import ListadoGalerias from '@/components/ListadoGalerias'
 import Image from 'next/image'
-import Link from 'next/link'
 
 export default function Home() {
+
   return (
     <>
       <section className={styles.contenedorHome}>
@@ -15,7 +15,11 @@ export default function Home() {
           <div>Contacto</div>
         </div>
         <div className={styles.contFrase}>
-          <h2>Lo que el viento se llevó</h2>
+          <Image src="/images/fotosConMama.jpg"
+                alt="fotografía para el recuerdo"
+                fill
+                style={{ objectFit: 'cover',zIndex: -1 }}/>
+          <h2>Lo que la memoria olvida, la fotografía recuerda</h2>
         </div>
       </section>
       <section className={styles.franjaNombre}>
@@ -23,23 +27,7 @@ export default function Home() {
           <h2>Luzem Fotografía</h2>
         </div>
       </section>
-      <section className={styles.categorias}>
-        {sesiones.map(sesion =>(
-          <div key={sesion.id} className={styles.contenedorSesion}>
-            <Link href={sesion.enlace}>
-            <div className={styles.imgWrapper}>
-              <Image src={sesion.imagen}
-                    alt={sesion.descripcion}
-                fill
-                style={{ objectFit: 'cover' }}
-            />
-            <h3 className={styles.sesionTitulo}>{sesion.titulo}</h3>
-            </div>
-            </Link>
-            
-          </div>
-        )) }
-      </section>
+      <ListadoGalerias/>
     </>
   )
 }

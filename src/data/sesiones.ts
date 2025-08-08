@@ -1,24 +1,24 @@
 export const sesiones = [
     {
-        id: "Familiar",
-        titulo: "Titulo familia",
-        descripcion: "descripcion Sesión de familia",
-        imagen: "/images/familia.png",
-        enlace: "/sesiones/familia"
-    },
-    {
-        id: "Recién nacido",
-        titulo: "Titulo recién nacido",
-        descripcion: "descripcion Sesión de recién nacido",
-        imagen: "/images/reciennacido.png",
-        enlace: "/sesiones/recien-nacido"
+        id: "Maternidad",
+        titulo: "Maternidad",
+        descripcion: "descripcion Sesión de maternidad",
+        imagen: "/images/maternidad.jpg",
+        enlace: "/sesiones/maternidad"
     },
     {
         id: "Parto",
-        titulo: "Titulo parto",
+        titulo: "Parto",
         descripcion: "descripcion Sesión de parto",
-        imagen: "/images/parto.jpeg",
+        imagen: "/images/parto.jpg",
         enlace: "/sesiones/parto"
+    },
+    {
+        id: "Fresh48",
+        titulo: "Fresh 48",
+        descripcion: "descripcion Sesión de fresh",
+        imagen: "/images/fresh.jpg",
+        enlace: "/sesiones/fresh48"
     },
 
 ]

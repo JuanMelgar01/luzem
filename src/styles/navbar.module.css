@@ -1,8 +1,9 @@
 .contenedorCabecera {
     padding: 0px;
+    position: relative;
     width: 100%;
     height: 100vh;
-    background-color: beige;
+    color: white;
 
 }
 
@@ -23,6 +24,7 @@
 
 .contMenu {
     animation: slideFadeIn 0.8s ease forwards;
+    background-color: rgb(66, 66, 66,0.7);
 }
 
 .contLogo {
@@ -39,7 +41,7 @@
 .redes {
     width: 40px;
     height: 40px;
-    background-color: blueviolet;
+    background-color: rgb(94, 94, 94);
 }
 
 
@@ -64,8 +66,25 @@
     transition: all 300ms;
 }
 
+.submenu{
+
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 110px;
+    background-color: rgb(66, 66, 66,0.7);
+  padding: 0.5rem 0;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 300ms;
+}
+.dropdown:hover .submenu {
+  display: block;
+      animation: slideFadeIn 0.8s ease forwards;
+}
+
 .active {
-    background-color: bisque;
+    background-color: #52502a;
 }
 
 .menu li:hover {
@@ -98,6 +117,9 @@
     text-decoration: none;
     transition: all 300ms;
 
+}
+.submenu{
+  left: 68px;
 }
 
 }
@@ -138,9 +160,17 @@ grid-template-areas:
         z-index: 1000;
     }
 
+    .menu li{
+        width: 100%;
+    }
+
     .menu.open>ul {
         display: flex;
         animation: slideFadeIn 0.4s ease forwards;
+    }
+    .submenu{
+        left: 0px;
+        position: relative;
     }
 }
 

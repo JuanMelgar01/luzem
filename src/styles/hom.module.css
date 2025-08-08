@@ -14,7 +14,9 @@
     height: 600px;
     padding-left: 100px;
     padding-right: 100px;
-    background-color: cadetblue;
+    background-color: #52502a;
+    color: white;
+    font-size: large;
 
 
 }
@@ -23,10 +25,14 @@
     display: grid;
     grid-area: Frase;
     align-items: center;
+    position: relative;
+    padding: 50px;
     height: 600px;
-    background-color: rgb(160, 95, 99);
     justify-items: center;
-
+    overflow: hidden;
+    color: white;
+    font-size: xx-large;
+    text-align: center;
 }
 
 .textBien {
@@ -40,6 +46,7 @@
 .franjaNombre {
     width: 100%;
     height: 15vh;
+    background-color: #633e11;
 }
 
 .nombre {
@@ -48,6 +55,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color:white;
 }
 
 .fade-in {
@@ -83,7 +91,9 @@
 
 .sesionTitulo {
     position: absolute;
+    right: 0;
     padding: 2rem;
+    padding-right: 6rem;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     font-size: 1.2rem;
@@ -100,12 +110,10 @@
     .contBienvenida {
         width: 100%;
         height: 600px;
-        background-color: cadetblue;
         padding: 50px;
     }
 
     .contFrase {
         height: 600px;
-        background-color: rgb(160, 95, 99);
     }
 }
